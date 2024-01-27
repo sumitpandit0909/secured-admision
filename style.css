@@ -1,0 +1,609 @@
+* {
+    background-color: #1A1B4B;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    color: #3a9efd;
+}
+
+nav {
+    /* margin-top: 10px; */
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+
+    margin-left: 3%;
+    margin-right: 3%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+    height: 100%;
+    /* padding: 0 20px; */
+    display: flex;
+    align-items: center;
+    /* padding: 15px; */
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #1e1f5a;
+    /* backdrop-filter: blur(10px); */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    /* background-color: #1e1f5a; */
+}
+
+.sidebar a {
+    width: 100%;
+    background-color: #1e1f5a;
+}
+
+.logo {
+    color: #292a73;
+
+
+}
+.menubutton{
+    display: none;
+}
+.main {
+    /* height: 100vh; */
+    text-align: center;
+    width: 100%;
+}
+
+.logo-text {
+    width: 130px;
+    /* background: transparent; */
+    /* font-family: 'Permanent Marker', cursive,sans-serif; */
+    font-family: poppins;
+    font-size: 35px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3%;
+}
+
+.featured {
+    height: 70vh;
+    margin-left: 34px;
+    animation: popupAnimation 0.5s ease-out forwards;
+    /* Use the animation on page load */
+    transform-origin: center;
+}
+
+@keyframes popupAnimation {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.grid_heading {
+    margin-top: 250px;
+    /* margin-left: 10px; */
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: poppins;
+}
+
+.grid-main-heading {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/* BUTTON  */
+.button {
+    display: block;
+    font-family: poppins;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    transition: 1s;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    color: #1a1b4b;
+    /* background: transparent; */
+
+}
+
+.college-section {
+    /* height: 100vh */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-gap: 5px; */
+    margin: 2%;
+}
+
+.colleges {
+    text-align: center;
+    height: 450px;
+    border-radius: 21px;
+    background: #1e1f5a;
+    /* box-shadow: -9px 9px 21px #1d1e52,
+        9px -9px 21px #353694; */
+    padding: 10px;
+    margin: 10px;
+}
+
+.college_heading_text {
+    text-align: center;
+    font-family: poppins;
+    font-size: 40px;
+    color: bisque;
+}
+
+.college_images {
+    align-items: center;
+    width: 100%;
+    border-radius: 21px;
+    /* margin: 10px; */
+
+}
+
+.college-name {
+    background: #1e1f5a;
+    font-size: 23px;
+    margin: 12px;
+    font-family: poppins;
+    color: rgb(51, 31, 230);
+}
+
+.college-text {
+    background: #1e1f5a;
+    text-align: start;
+    font-size: 15px;
+    color: #adafb1;
+    font-family: poppins;
+}
+
+/* who we are  */
+.about-us {
+    text-align: center;
+    margin: 10px;
+    /* background-color: red; */
+    /* height: 50vh; */
+}
+
+.about-us-heading {
+    font-family: poppins;
+    font-size: 40px;
+    color: bisque;
+}
+
+.aboutus-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto 0;
+}
+
+.aboutus-column1 {
+    width: 100%;
+    max-height: 60%;
+
+}
+
+.aboutus-column1 img {
+    border-radius: 21px;
+    margin-right: 15px;
+}
+
+.aboutus-column2 {
+    text-align: start;
+    font-size: 22px;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    color: #adafb1;
+}
+
+.subhead {
+    font-size: 28px;
+    color: #3a9efd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* our vision */
+.vision-heading {
+    /* text-align: center; */
+    font-family: poppins;
+    font-size: 40px;
+    color: bisque;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.ourvision {
+    width: 90%;
+    margin: 0 auto 0;
+    /* background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./images/visionbg.jpg);
+    background-repeat: no-repeat; */
+}
+
+.ourvision p {
+    font-size: 22px;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    color: #adafb1;
+}
+
+/* services  */
+.offer {
+    margin: 20px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.service-column {
+    text-align: center;
+    height: 320px;
+    /* overflow-y: scroll; */
+    border-radius: 21px;
+    background: #1e1f5a;
+    /* box-shadow: -9px 9px 21px #1d1e52,
+        9px -9px 21px #353694; */
+    padding: 7px;
+    margin: 10px;
+}
+
+.service-name {
+    font-family: poppins;
+    font-size: 23px;
+    color: rgb(238, 192, 137);
+    background: #1e1f5a;
+}
+
+.service-text {
+    background: #1e1f5a;
+    padding: 7px;
+    text-align: start;
+    font-size: 17px;
+    color: #adafb1;
+    font-family: poppins;
+}
+
+footer p {
+    /* height: 10px; */
+    color: whitesmoke;
+    font-family: poppins;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(21, 7, 59);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+/* contact page */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* height: 100vh; */
+    width: 80%;
+    margin: 80px auto 0;
+}
+
+.contactchannel {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    justify-content: space-between;
+    margin: 20px;
+    width: 80%;
+}
+
+.contactcolumn {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    background-color: #17183d;
+    border-radius: 8px;
+
+}
+
+/* .contact-column1{
+    margin-top: 80px;
+} */
+.iconlogo {
+    padding: 3px;
+    background-color: #17183d;
+
+}
+
+.text {
+    background-color: #17183d;
+    margin-right: 10px;
+    font-family: poppins;
+    font-size: 18px;
+    color: bisque;
+    padding: 10px;
+    /* border-radius: 15px; */
+}
+
+.bttext {
+    background-color: #17183d;
+    margin-right: 10px;
+    font-family: poppins;
+    font-size: 18px;
+    color: bisque;
+}
+
+/* form  */
+
+.container {
+    width: 90%;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputBox {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="email"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 10px;
+    font-size: 16px;
+    color: white;
+    font-family: poppins;
+}
+
+.inputBox textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 10px;
+    font-size: 16px;
+    color: white;
+    font-family: poppins;
+}
+
+.inputBox button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: rgb(0, 119, 255);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.inputBox button:hover {
+    background: rgb(0, 17, 255);
+    transition: all 0.3s ease;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.alert {
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
+
+/* privacy page  */
+.privacy {
+    height: fit-content;
+}
+
+.privacycontent {
+    color: #adafb1;
+    font-family: poppins;
+    font-size: 18px;
+    margin: 3%;
+
+}
+
+/* nav bar  */
+@media only screen and (max-width: 1024px) {
+    .featured {
+        height: 70vh;
+        margin-left: 34px;
+
+    }
+
+    .grid_heading {
+        margin-top: 150px;
+        /* margin-left: 10px; */
+        font-size: 30px;
+
+    }
+
+    .aboutus-column1 img {
+        height: 90vh;
+    }
+
+    .aboutus-column2 {
+
+        font-size: 19px;
+
+    }
+
+    .subhead {
+        font-size: 24px;
+
+    }
+
+    .ourvision p {
+        font-size: 20px;
+
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-column {
+        height: 230px;
+        border-radius: 21px;
+        padding: 7px;
+        margin: 10px;
+    }
+
+    .service-name {
+        font-size: 25px;
+    }
+
+    .college-section {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .college_images {
+        height: 45vh;
+        width: 90%;
+
+    }
+
+    .college-text {
+        background: #1e1f5a;
+        /* overflow:  hidden; */
+        text-align: start;
+        font-size: 15px;
+        color: #adafb1;
+        font-family: poppins;
+    }
+}
+
+/* nav responsive  */
+@media only screen and (max-width: 400px) {
+    .sidebar {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hideonmobile {
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+
+    .featured {
+        height: 40vh;
+        margin-left: 15px;
+    }
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    /* nav{
+        width: 100%;
+    } */
+    .aboutus-row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .aboutus-column1 {
+        /* margin: 10px; */
+    }
+
+    .about-us-heading {
+        /* font-family: poppins;
+            font-size: 40px;
+            color: bisque; */
+        text-align: center;
+    }
+}
