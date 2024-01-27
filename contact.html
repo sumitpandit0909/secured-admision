@@ -17,17 +17,37 @@
 </head>
 
 <body>
-    <section class="main">
+    <section class="main contact-section">
         <div class="nav">
-            <div class="logo">
-                <a href=""><img class="logo-text" src="images/logo.png" alt=""></a>
-            </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="privacy.html">PRIVACY POLICY</a></li>
-                <li><a href="disclaimer.html">DISCLAIMER</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
+
+            <nav>
+                <ul class="sidebar" id="sidemenu">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36"
+                                viewBox="0 -960 960 960" width="36" fill="#3a9efd">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                    <li><a href="disclaimer.html">DISCLAIMER</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <!-- <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i> -->
+                </ul>
+                <ul id="sidemenu">
+                    <li><a href=""><img class="logo-text" src="images/logo.png" alt=""></a></li>
+                    <li class="hideonmobile"><a href="index.html">HOME</a></li>
+                    <li class="hideonmobile"><a href="privacy.html">PRIVACY POLICY</a></li>
+                    <li class="hideonmobile"><a href="disclaimer.html">DISCLAIMER</a></li>
+                    <li class="hideonmobile"><a href="contact.html">CONTACT US</a></li>
+                    <li class="menubutton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36"
+                                viewBox="0 -960 960 960" width="36" fill="#3a9efd">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                    <!-- <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i> -->
+                </ul>
+                <!-- <i class="fa-solid fa-bars fas" onclick="openmenu()"></i> -->
+            </nav>
+
         </div>
         <div class="contact-grid">
             <div class="contact-column contact-column1">
@@ -78,6 +98,16 @@
     <footer>
         <p>&copy; All rights are reserved by SECURED ADMISION</p>
     </footer>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
