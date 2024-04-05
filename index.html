@@ -28,25 +28,25 @@
                                 <path
                                     d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                             </svg></a></li>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
-                    <li><a href="disclaimer.html">DISCLAIMER</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <!-- <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i> -->
+                    <li><a href="#college-feature">FEATURED-COLLEGES</a></li>
+                    <li><a href="#offer">SERVICES</a></li>
+                    <li><a href="#about-us">ABOUT-US</a></li>
+                    <li><a href="#contact-grid">CONTACT-US</a></li>
+                    
                 </ul>
                 <ul id="sidemenu">
                     <li><a href=""><img class="logo-text" src="images/logo.png" alt=""></a></li>
-                    <li class="hideonmobile"><a href="index.html">HOME</a></li>
-                    <li class="hideonmobile"><a href="privacy.html">PRIVACY POLICY</a></li>
-                    <li class="hideonmobile"><a href="disclaimer.html">DISCLAIMER</a></li>
-                    <li class="hideonmobile"><a href="contact.html">CONTACT US</a></li>
+                    <li class="hideonmobile"><a href="#college-feature">FEATURED-COLLEGES</a></li>
+                    <li class="hideonmobile"><a href="#offer">SERVICES</a></li>
+                    <li class="hideonmobile"><a href="#about-us">ABOUT-US</a></li>
+                    <li class="hideonmobile"><a href="#contact-grid">CONTACT-US</a></li>
                     <li class="menubutton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36"
                                 viewBox="0 -960 960 960" width="36" fill="#3a9efd">
                                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                             </svg></a></li>
-                    <!-- <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i> -->
+                   
                 </ul>
-                <!-- <i class="fa-solid fa-bars fas" onclick="openmenu()"></i> -->
+                
             </nav>
 
         </div>
@@ -59,7 +59,7 @@
 
             <div>
                 <h2 class="grid_heading">
-                    GET YOUR DREAM COLLEGE WITH
+                    GET DIRECT ADMISSION IN TOP COLLEGES WITH
                 </h2>
                 <h1 class="grid-main-heading">"SECURED ADMISSION"</h1>
                 <a class="button" href="tel:8527256719">CALL NOW</a>
@@ -67,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section class="college-feature">
+    <section class="college-feature" id="college-feature">
         <h2 class="college_heading_text">FEATURED COLLEGES</h2>
         <div class="college-section">
             <div class="colleges">
@@ -160,7 +160,7 @@
     </section>
 
     <!-- who we are  -->
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <h1 class="about-us-heading">WHO WE ARE...</h1>
         <div class="aboutus-row">
             <div class="aboutus-column1"><img src="images/aboutbanner.jpg" alt=""></div>
@@ -237,7 +237,7 @@
 
         </div>
     </section>
-    <section class="offer">
+    <section class="offer" id="offer">
         <h3 class="college_heading_text .service_heading_text">WHAT WE OFFER...</h3>
         <div class="services">
             <div class="service-column">
@@ -266,6 +266,56 @@
             </div>
         </div>
     </section>
+    <div class="contact-grid" id="contact-grid">
+        <div class="contact-column contact-column1">
+            <div class="contactimg">
+                <img src="images/contact-img.png" alt="">
+            </div>
+            <div class="contactchannel">
+                <div class="contactcolumn">
+                    <div class="iconlogo"><img style="background-color: #17183d;" src="images/insta.png" alt="">
+                    </div>
+                    <div class="text"><a class="bttext" href="https://ig.me/m/secured.admission"
+                            target="_blank">Instagram</a></div>
+                </div>
+                <div class="contactcolumn">
+                    <div class="iconlogo"><img style="background-color: #17183d;" src="images/whatsapp .png" alt="">
+                    </div>
+                    <div class="text"><a class="bttext" href="https://wa.link/fe8qz8" target="_blank">Whatsapp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-column">
+            <div class="container">
+                <form  action="" id="contactForm">
+                    <div class="alert">Your message sent</div>
+
+                    <div class="inputBox">
+                        <input type="text" id="name" required placeholder="Your name...." />
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" id="phnum" required placeholder="Your Number....." />
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="collegenames" required placeholder="Your Preferred colleges....." />
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea id="msgContent" cols="30" rows="10" required placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="inputBox">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./mail.js"></script>
 
     
     <footer>
