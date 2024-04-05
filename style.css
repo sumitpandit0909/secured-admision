@@ -24,6 +24,8 @@ nav {
 
     margin-left: 3%;
     margin-right: 3%;
+/* position: sticky; */
+top: 0;
     /* display: flex; */
     /* justify-content: space-between; */
 }
@@ -174,7 +176,7 @@ nav li:first-child {
 
 .colleges {
     text-align: center;
-    height: 450px;
+    height: fit-content;
     border-radius: 21px;
     background: #1e1f5a;
     /* box-shadow: -9px 9px 21px #1d1e52,
@@ -203,7 +205,7 @@ nav li:first-child {
     font-size: 23px;
     margin: 12px;
     font-family: poppins;
-    color: rgb(51, 31, 230);
+    color: beige;
 }
 
 .college-text {
@@ -300,7 +302,7 @@ nav li:first-child {
 
 .service-column {
     text-align: center;
-    height: 320px;
+    height: fit-content;
     /* overflow-y: scroll; */
     border-radius: 21px;
     background: #1e1f5a;
@@ -418,6 +420,7 @@ footer p {
     margin: 10px 0;
     border-radius: 5px;
     overflow: hidden;
+    border: none;
 }
 
 .inputBox input[type="text"],
@@ -584,6 +587,7 @@ footer p {
 
 /* nav responsive  */
 @media only screen and (max-width: 400px) {
+   
     .sidebar {
         width: 90%;
     }
@@ -596,6 +600,7 @@ footer p {
 }
 
 @media only screen and (max-width: 850px) {
+    
     .hideonmobile {
         display: none;
     }
